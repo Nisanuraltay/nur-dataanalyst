@@ -36,14 +36,26 @@
       padding: 60px 20px;
     }
 
-    .card {
-      background: #020617;
-      padding: 24px;
-      border-radius: 16px;
-      margin-bottom: 24px;
-      border: 1px solid #1e293b;
-      transition: transform 0.2s ease, box-shadow 0.2s ease;
+    .tag {
+      position: absolute;
+      top: 16px;
+      right: 16px;
+      background: #38bdf8;
+      color: #020617;
+      padding: 6px 12px;
+      border-radius: 999px;
+      font-size: 12px;
+      font-weight: 600;
     }
+
+    .card {
+      background: linear-gradient(180deg, #020617, #020617);
+      padding: 28px;
+      border-radius: 18px;
+      margin-bottom: 32px;
+      border: 1px solid #1e293b;
+      position: relative;
+     }
 
     .card:hover {
       transform: translateY(-4px);
@@ -94,6 +106,9 @@
       font-weight: 600;
       font-size: 14px; 
     }
+    section + section {
+  border-top: 1px solid #1e293b;
+}
   </style>
 </head>
 
@@ -150,14 +165,16 @@
     <span>Excel</span>
     <span>Google Tag Manager</span>
   </div>
-</section>
-  
-<section>
+</section>  
+<<section>
   <h2>Contact</h2>
+
   <div class="card">
+    <p>Let’s connect and talk about data 👋</p>
+
     <p>
-      LinkedIn: <a href="#">your-link</a><br>
-      Email: yourmail@gmail.com
+      🔗 <a href="https://linkedin.com/in/your-link" target="_blank">LinkedIn</a><br>
+      📧 <a href="mailto:yourmail@gmail.com">yourmail@gmail.com</a>
     </p>
   </div>
 </section>
